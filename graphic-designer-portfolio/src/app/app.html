@@ -1,0 +1,21 @@
+<div class="portfolio-container">
+  <nav class="nav-bar">
+    <button class="nav-btn" routerLink="/home" routerLinkActive="active">Home</button>
+    <button class="nav-btn" routerLink="/portfolio" routerLinkActive="active">Portfolio</button>
+    <button class="nav-btn" routerLink="/about" routerLinkActive="active">About</button>
+    <button class="nav-btn" routerLink="/contact" routerLinkActive="active">Contact</button>
+  </nav>
+  
+  <div class="horizontal-scroll-container" #scrollContainer>
+    <router-outlet #outlet="outlet" />
+  </div>
+  
+  <div class="scroll-indicator">
+    <div class="scroll-dots">
+      <span class="dot" [class.active]="currentSection === 0" (click)="navigateToSection(0)"></span>
+      <span class="dot" [class.active]="currentSection === 1" (click)="navigateToSection(1)"></span>
+      <span class="dot" [class.active]="currentSection === 2" (click)="navigateToSection(2)"></span>
+      <span class="dot" [class.active]="currentSection === 3" (click)="navigateToSection(3)"></span>
+    </div>
+  </div>
+</div>

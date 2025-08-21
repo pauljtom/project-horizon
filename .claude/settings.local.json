@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx @angular/cli@latest new:*)",
+      "Bash(npx @angular/cli@17 new:*)",
+      "Bash(npm install)",
+      "Bash(ng generate component:*)",
+      "Bash(ng serve:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

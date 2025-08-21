@@ -1,0 +1,251 @@
+.home-section {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  background: var(--gradient-soft);
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xxl);
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  z-index: 2;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--dark-pink);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--accent-pink);
+  margin-bottom: var(--spacing-md);
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.btn.primary {
+  background: var(--gradient-primary);
+  color: var(--white);
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-size: 1.125rem;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--dark-pink);
+  border: 2px solid var(--primary-pink);
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-size: 1.125rem;
+}
+
+.btn.secondary:hover {
+  background: var(--primary-pink);
+  color: var(--white);
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-placeholder {
+  width: 350px;
+  height: 350px;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: var(--shadow-strong);
+}
+
+.profile-image {
+  font-size: 6rem;
+  z-index: 2;
+}
+
+.decorative-elements {
+  position: absolute;
+  inset: 0;
+}
+
+.circle {
+  position: absolute;
+  border-radius: var(--radius-full);
+  background: var(--gradient-sunset);
+  opacity: 0.3;
+}
+
+.circle-1 {
+  width: 60px;
+  height: 60px;
+  top: -20px;
+  left: -20px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.circle-2 {
+  width: 40px;
+  height: 40px;
+  bottom: -10px;
+  right: -10px;
+  animation: pulse 2s ease-in-out infinite 0.5s;
+}
+
+.circle-3 {
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: -15px;
+  animation: pulse 2s ease-in-out infinite 1s;
+}
+
+.heart {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.heart-1 {
+  top: 20%;
+  right: -30px;
+}
+
+.heart-2 {
+  bottom: 30%;
+  left: -40px;
+  animation-delay: 1s;
+}
+
+.heart-3 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 2s;
+}
+
+.skills-preview {
+  display: flex;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xxl);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  border: 2px solid var(--secondary-pink);
+  transition: all var(--transition-medium);
+  min-width: 150px;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+  border-color: var(--accent-pink);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+}
+
+.skill-text {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  color: var(--dark-pink);
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--spacing-xl);
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .image-placeholder {
+    width: 250px;
+    height: 250px;
+  }
+
+  .profile-image {
+    font-size: 4rem;
+  }
+
+  .skills-preview {
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+  }
+
+  .skill-item {
+    min-width: 120px;
+    padding: var(--spacing-md);
+  }
+
+  .skill-icon {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,31 @@
+<div class="portfolio-section">
+  <div class="portfolio-header animate-fade-up">
+    <h1>My Creative Journey ✨</h1>
+    <p>Explore a collection of designs that blend creativity with purpose</p>
+  </div>
+  
+  <div class="portfolio-filters">
+    <button class="filter-btn active" (click)="setActiveFilter('all')">All Work</button>
+    <button class="filter-btn" (click)="setActiveFilter('branding')">Branding</button>
+    <button class="filter-btn" (click)="setActiveFilter('web')">Web Design</button>
+    <button class="filter-btn" (click)="setActiveFilter('print')">Print</button>
+    <button class="filter-btn" (click)="setActiveFilter('illustration')">Illustration</button>
+  </div>
+  
+  <div class="portfolio-grid">
+    @for (project of filteredProjects; track project.id) {
+      <div class="portfolio-item animate-fade-up" [attr.data-category]="project.category">
+        <div class="project-image">
+          <div class="image-placeholder" [style.background]="project.color">
+            <span class="project-icon">{{ project.icon }}</span>
+          </div>
+          <div class="project-overlay">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+            <span class="project-category">{{ project.category }}</span>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>
