@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class About {
 
+  public teneilleIllustration: string = "/assets/t-illustration.avif"
+
 }

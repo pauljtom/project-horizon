@@ -8,4 +8,7 @@ import { RouterLink } from '@angular/router';
 })
 export class Home {
 
+  public teneillePicture1: string = "/assets/teneille.jpeg"
+  public teneillePicture2: string = "/assets/t2.jpg"
+
 }
