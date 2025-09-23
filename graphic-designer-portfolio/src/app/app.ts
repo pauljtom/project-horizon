@@ -6,8 +6,7 @@ import { filter } from 'rxjs/operators';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, RouterLink, RouterLinkActive, CommonModule],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  templateUrl: './app.html'
 })
 export class App implements OnInit {
   @ViewChild('scrollContainer', { static: false }) scrollContainer!: ElementRef;

@@ -13,8 +13,7 @@ interface Project {
 @Component({
   selector: 'app-portfolio',
   imports: [CommonModule],
-  templateUrl: './portfolio.html',
-  styleUrl: './portfolio.scss'
+  templateUrl: './portfolio.html'
 })
 export class Portfolio {
   activeFilter = 'all';

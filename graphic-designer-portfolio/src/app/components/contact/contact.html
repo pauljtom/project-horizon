@@ -1,16 +1,16 @@
-<div class="contact-section">
-  <div class="contact-header animate-fade-up">
-    <h1>Let's Create Something Beautiful Together ✨</h1>
-    <p>I'd love to hear about your project and discuss how we can bring your vision to life!</p>
+<div class="min-w-screen min-h-screen px-lg py-xxl bg-gradient-soft snap-start overflow-y-auto overflow-x-hidden">
+  <div class="text-center mb-xxl max-w-[800px] mx-auto animate-fade-up">
+    <h1 class="text-5xl text-dark-pink mb-md">Let's Create Something Beautiful Together ✨</h1>
+    <p class="text-xl text-text-dark leading-[1.6]">I'd love to hear about your project and discuss how we can bring your vision to life!</p>
   </div>
   
-  <div class="contact-content">
-    <div class="contact-form-container animate-fade-left">
-      <div class="form-wrapper">
-        <h2>Send Me a Message 💌</h2>
-        <form class="contact-form" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
-          <div class="form-group">
-            <label for="name">Your Name *</label>
+  <div class="grid grid-cols-2 gap-xxl mb-xxl max-w-[1200px] mx-auto">
+    <div class="animate-fade-left">
+      <div class="bg-white/90 p-xxl rounded-lg shadow-medium border-2 border-secondary-pink">
+        <h2 class="text-[2rem] text-dark-pink mb-xl text-center">Send Me a Message 💌</h2>
+        <form class="flex flex-col gap-lg" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+          <div class="flex flex-col gap-xs">
+            <label for="name" class="font-primary font-semibold text-dark-pink text-base">Your Name *</label>
             <input 
               type="text" 
               id="name" 
@@ -18,12 +18,12 @@
               ngModel 
               required 
               placeholder="What should I call you?"
-              class="form-input"
+              class="p-md border-2 border-grey-medium rounded-md font-secondary text-base transition-all duration-medium bg-white focus:outline-none focus:border-accent-pink focus:shadow-[0_0_0_3px_rgba(255,105,180,0.1)] placeholder:text-grey-dark placeholder:opacity-70"
             >
           </div>
           
-          <div class="form-group">
-            <label for="email">Email Address *</label>
+          <div class="flex flex-col gap-xs">
+            <label for="email" class="font-primary font-semibold text-dark-pink text-base">Email Address *</label>
             <input 
               type="email" 
               id="email" 
@@ -31,13 +31,13 @@
               ngModel 
               required 
               placeholder="your.email@example.com"
-              class="form-input"
+              class="p-md border-2 border-grey-medium rounded-md font-secondary text-base transition-all duration-medium bg-white focus:outline-none focus:border-accent-pink focus:shadow-[0_0_0_3px_rgba(255,105,180,0.1)] placeholder:text-grey-dark placeholder:opacity-70"
             >
           </div>
           
-          <div class="form-group">
-            <label for="project">Project Type</label>
-            <select id="project" name="project" ngModel class="form-input">
+          <div class="flex flex-col gap-xs">
+            <label for="project" class="font-primary font-semibold text-dark-pink text-base">Project Type</label>
+            <select id="project" name="project" ngModel class="p-md border-2 border-grey-medium rounded-md font-secondary text-base transition-all duration-medium bg-white focus:outline-none focus:border-accent-pink focus:shadow-[0_0_0_3px_rgba(255,105,180,0.1)]">
               <option value="">Select a project type</option>
               <option value="branding">Brand Identity</option>
               <option value="web">Web Design</option>
@@ -47,9 +47,9 @@
             </select>
           </div>
           
-          <div class="form-group">
-            <label for="budget">Budget Range</label>
-            <select id="budget" name="budget" ngModel class="form-input">
+          <div class="flex flex-col gap-xs">
+            <label for="budget" class="font-primary font-semibold text-dark-pink text-base">Budget Range</label>
+            <select id="budget" name="budget" ngModel class="p-md border-2 border-grey-medium rounded-md font-secondary text-base transition-all duration-medium bg-white focus:outline-none focus:border-accent-pink focus:shadow-[0_0_0_3px_rgba(255,105,180,0.1)]">
               <option value="">Select budget range</option>
               <option value="1000-2500">$1,000 - $2,500</option>
               <option value="2500-5000">$2,500 - $5,000</option>
@@ -58,8 +58,8 @@
             </select>
           </div>
           
-          <div class="form-group">
-            <label for="message">Tell Me About Your Project *</label>
+          <div class="flex flex-col gap-xs">
+            <label for="message" class="font-primary font-semibold text-dark-pink text-base">Tell Me About Your Project *</label>
             <textarea 
               id="message" 
               name="message" 
@@ -67,70 +67,70 @@
               required 
               rows="5"
               placeholder="Share your ideas, goals, and what makes your project special..."
-              class="form-input"
+              class="p-md border-2 border-grey-medium rounded-md font-secondary text-base transition-all duration-medium bg-white focus:outline-none focus:border-accent-pink focus:shadow-[0_0_0_3px_rgba(255,105,180,0.1)] placeholder:text-grey-dark placeholder:opacity-70 resize-vertical min-h-[120px]"
             ></textarea>
           </div>
           
-          <button type="submit" class="submit-btn" [disabled]="!contactForm.valid">
+          <button type="submit" class="bg-gradient-primary text-white border-none px-xl py-md rounded-md font-primary text-lg font-semibold cursor-pointer transition-all duration-medium shadow-soft mt-md hover:not(:disabled):-translate-y-0.5 hover:not(:disabled):shadow-medium disabled:opacity-60 disabled:cursor-not-allowed" [disabled]="!contactForm.valid">
             Send Message 💕
           </button>
         </form>
       </div>
     </div>
     
-    <div class="contact-info animate-fade-right">
-      <div class="info-card">
-        <h3>Get In Touch 📞</h3>
-        <div class="contact-methods">
-          <div class="contact-method">
-            <span class="contact-icon">📧</span>
-            <div class="contact-details">
-              <h4>Email</h4>
-              <p>hello@sarahdesigns.com</p>
+    <div class="animate-fade-right">
+      <div class="bg-white/90 p-xxl rounded-lg shadow-medium border-2 border-secondary-pink h-fit">
+        <h3 class="text-[2rem] text-dark-pink mb-xl text-center">Get In Touch 📞</h3>
+        <div class="mb-xl">
+          <div class="flex items-center gap-md p-md mb-md bg-light-pink rounded-md transition-all duration-medium hover:translate-x-1 hover:shadow-soft">
+            <span class="text-[2rem] w-[50px] text-center">📧</span>
+            <div>
+              <h4 class="font-primary font-semibold text-dark-pink mb-xs">Email</h4>
+              <p class="text-text-dark text-base">hello@sarahdesigns.com</p>
             </div>
           </div>
           
-          <div class="contact-method">
-            <span class="contact-icon">📱</span>
-            <div class="contact-details">
-              <h4>Phone</h4>
-              <p>+1 (555) 123-4567</p>
+          <div class="flex items-center gap-md p-md mb-md bg-light-pink rounded-md transition-all duration-medium hover:translate-x-1 hover:shadow-soft">
+            <span class="text-[2rem] w-[50px] text-center">📱</span>
+            <div>
+              <h4 class="font-primary font-semibold text-dark-pink mb-xs">Phone</h4>
+              <p class="text-text-dark text-base">+1 (555) 123-4567</p>
             </div>
           </div>
           
-          <div class="contact-method">
-            <span class="contact-icon">📍</span>
-            <div class="contact-details">
-              <h4>Location</h4>
-              <p>San Francisco, CA</p>
+          <div class="flex items-center gap-md p-md mb-md bg-light-pink rounded-md transition-all duration-medium hover:translate-x-1 hover:shadow-soft">
+            <span class="text-[2rem] w-[50px] text-center">📍</span>
+            <div>
+              <h4 class="font-primary font-semibold text-dark-pink mb-xs">Location</h4>
+              <p class="text-text-dark text-base">San Francisco, CA</p>
             </div>
           </div>
         </div>
         
-        <div class="social-links">
-          <h4>Follow My Journey</h4>
-          <div class="social-icons">
-            <a href="#" class="social-link" aria-label="Instagram">
-              <span>📷</span>
+        <div class="mb-xl text-center">
+          <h4 class="font-primary font-semibold text-dark-pink mb-md">Follow My Journey</h4>
+          <div class="flex justify-center gap-md">
+            <a href="#" class="flex items-center justify-center w-[50px] h-[50px] bg-gradient-primary rounded-full no-underline transition-all duration-medium shadow-soft hover:-translate-y-1 hover:scale-110 hover:shadow-medium" aria-label="Instagram">
+              <span class="text-2xl">📷</span>
             </a>
-            <a href="#" class="social-link" aria-label="Dribbble">
-              <span>🎨</span>
+            <a href="#" class="flex items-center justify-center w-[50px] h-[50px] bg-gradient-primary rounded-full no-underline transition-all duration-medium shadow-soft hover:-translate-y-1 hover:scale-110 hover:shadow-medium" aria-label="Dribbble">
+              <span class="text-2xl">🎨</span>
             </a>
-            <a href="#" class="social-link" aria-label="Behance">
-              <span>💼</span>
+            <a href="#" class="flex items-center justify-center w-[50px] h-[50px] bg-gradient-primary rounded-full no-underline transition-all duration-medium shadow-soft hover:-translate-y-1 hover:scale-110 hover:shadow-medium" aria-label="Behance">
+              <span class="text-2xl">💼</span>
             </a>
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <span>💼</span>
+            <a href="#" class="flex items-center justify-center w-[50px] h-[50px] bg-gradient-primary rounded-full no-underline transition-all duration-medium shadow-soft hover:-translate-y-1 hover:scale-110 hover:shadow-medium" aria-label="LinkedIn">
+              <span class="text-2xl">💼</span>
             </a>
           </div>
         </div>
         
-        <div class="response-time">
-          <div class="response-badge">
-            <span class="badge-icon">⚡</span>
-            <div class="badge-text">
-              <h5>Quick Response</h5>
-              <p>I typically respond within 24 hours</p>
+        <div class="bg-gradient-sunset p-lg rounded-md text-white">
+          <div class="flex items-center gap-md">
+            <span class="text-[2rem]">⚡</span>
+            <div>
+              <h5 class="font-primary font-semibold mb-xs text-white">Quick Response</h5>
+              <p class="text-sm text-white opacity-90">I typically respond within 24 hours</p>
             </div>
           </div>
         </div>
@@ -138,13 +138,14 @@
     </div>
   </div>
   
-  <div class="testimonial animate-fade-up">
-    <div class="testimonial-content">
-      <blockquote>
+  <div class="max-w-[800px] mx-auto text-center animate-fade-up">
+    <div class="bg-white/90 p-xxl rounded-lg shadow-soft border-2 border-secondary-pink">
+      <blockquote class="text-xl italic text-text-dark leading-[1.6] mb-lg relative">
+        <span class="absolute text-[4rem] text-accent-pink -top-5 -left-5 font-serif">"</span>
         "Sarah transformed our brand completely! Her attention to detail and creative vision 
         exceeded all our expectations. Working with her was an absolute joy!"
       </blockquote>
-      <cite>— Emma Johnson, Bloom Bakery</cite>
+      <cite class="font-primary font-semibold text-dark-pink text-base">— Emma Johnson, Bloom Bakery</cite>
     </div>
   </div>
 </div>

@@ -1,28 +1,28 @@
-<div class="portfolio-section">
-  <div class="portfolio-header animate-fade-up">
-    <h1>My Creative Journey ✨</h1>
-    <p>Explore a collection of designs that blend creativity with purpose</p>
+<div class="min-w-screen min-h-screen px-lg py-xxl bg-gradient-soft snap-start overflow-y-auto overflow-x-hidden">
+  <div class="text-center mb-xl animate-fade-up">
+    <h1 class="text-5xl text-dark-pink mb-sm">My Creative Journey ✨</h1>
+    <p class="text-xl text-text-dark max-w-[600px] mx-auto">Explore a collection of designs that blend creativity with purpose</p>
   </div>
   
-  <div class="portfolio-filters">
-    <button class="filter-btn active" (click)="setActiveFilter('all')">All Work</button>
-    <button class="filter-btn" (click)="setActiveFilter('branding')">Branding</button>
-    <button class="filter-btn" (click)="setActiveFilter('web')">Web Design</button>
-    <button class="filter-btn" (click)="setActiveFilter('print')">Print</button>
-    <button class="filter-btn" (click)="setActiveFilter('illustration')">Illustration</button>
+  <div class="flex justify-center gap-sm mb-xl flex-wrap">
+    <button class="bg-transparent text-dark-pink border-2 border-primary-pink px-md py-sm rounded-md font-primary font-medium cursor-pointer transition-all duration-medium relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-primary before:transition-all before:duration-medium before:-z-10 hover:before:left-0 hover:text-white hover:-translate-y-0.5 hover:shadow-soft [&.active]:before:left-0 [&.active]:text-white active" (click)="setActiveFilter('all')">All Work</button>
+    <button class="bg-transparent text-dark-pink border-2 border-primary-pink px-md py-sm rounded-md font-primary font-medium cursor-pointer transition-all duration-medium relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-primary before:transition-all before:duration-medium before:-z-10 hover:before:left-0 hover:text-white hover:-translate-y-0.5 hover:shadow-soft [&.active]:before:left-0 [&.active]:text-white" (click)="setActiveFilter('branding')">Branding</button>
+    <button class="bg-transparent text-dark-pink border-2 border-primary-pink px-md py-sm rounded-md font-primary font-medium cursor-pointer transition-all duration-medium relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-primary before:transition-all before:duration-medium before:-z-10 hover:before:left-0 hover:text-white hover:-translate-y-0.5 hover:shadow-soft [&.active]:before:left-0 [&.active]:text-white" (click)="setActiveFilter('web')">Web Design</button>
+    <button class="bg-transparent text-dark-pink border-2 border-primary-pink px-md py-sm rounded-md font-primary font-medium cursor-pointer transition-all duration-medium relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-primary before:transition-all before:duration-medium before:-z-10 hover:before:left-0 hover:text-white hover:-translate-y-0.5 hover:shadow-soft [&.active]:before:left-0 [&.active]:text-white" (click)="setActiveFilter('print')">Print</button>
+    <button class="bg-transparent text-dark-pink border-2 border-primary-pink px-md py-sm rounded-md font-primary font-medium cursor-pointer transition-all duration-medium relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-primary before:transition-all before:duration-medium before:-z-10 hover:before:left-0 hover:text-white hover:-translate-y-0.5 hover:shadow-soft [&.active]:before:left-0 [&.active]:text-white" (click)="setActiveFilter('illustration')">Illustration</button>
   </div>
   
-  <div class="portfolio-grid">
+  <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-xl max-w-[1200px] mx-auto">
     @for (project of filteredProjects; track project.id) {
-      <div class="portfolio-item animate-fade-up" [attr.data-category]="project.category">
-        <div class="project-image">
-          <div class="image-placeholder" [style.background]="project.color">
-            <span class="project-icon">{{ project.icon }}</span>
+      <div class="relative rounded-lg overflow-hidden bg-white shadow-soft transition-all duration-medium cursor-pointer hover:-translate-y-2.5 hover:shadow-strong animate-fade-up [&:nth-child(1)]:[animation-delay:0.1s] [&:nth-child(2)]:[animation-delay:0.2s] [&:nth-child(3)]:[animation-delay:0.3s] [&:nth-child(4)]:[animation-delay:0.4s] [&:nth-child(5)]:[animation-delay:0.5s] [&:nth-child(6)]:[animation-delay:0.6s] [&:nth-child(7)]:[animation-delay:0.7s] [&:nth-child(8)]:[animation-delay:0.8s]" [attr.data-category]="project.category">
+        <div class="relative h-[250px] overflow-hidden">
+          <div class="w-full h-full flex justify-center items-center bg-gradient-primary relative" [style.background]="project.color">
+            <span class="text-[4rem] z-[2]">{{ project.icon }}</span>
           </div>
-          <div class="project-overlay">
-            <h3>{{ project.title }}</h3>
-            <p>{{ project.description }}</p>
-            <span class="project-category">{{ project.category }}</span>
+          <div class="absolute bottom-0 left-0 right-0 bg-[linear-gradient(transparent,rgba(0,0,0,0.7),rgba(0,0,0,0.9))] text-white px-md pt-xl pb-md translate-y-[70%] transition-transform duration-medium group-hover:translate-y-0 [.hover\:shadow-strong:hover_&]:translate-y-0">
+            <h3 class="text-xl mb-xs text-white">{{ project.title }}</h3>
+            <p class="text-sm mb-sm opacity-90">{{ project.description }}</p>
+            <span class="inline-block bg-accent-pink text-white px-sm py-xs rounded-md text-xs font-semibold uppercase tracking-wide">{{ project.category }}</span>
           </div>
         </div>
       </div>

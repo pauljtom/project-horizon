@@ -1,46 +1,46 @@
-<div class="home-section">
-  <div class="hero-content animate-fade-up">
-    <div class="hero-text">
-      <h1 class="main-title animate-pulse">Hi, I'm Teneille ✨</h1>
-      <h2 class="subtitle">Graphic Designer & Creative Artist</h2>
-      <p class="description">
+<div class="min-w-screen h-screen flex flex-col justify-center items-center px-lg py-xxl bg-gradient-soft snap-start relative overflow-hidden">
+  <div class="grid grid-cols-2 gap-xxl items-center max-w-[1200px] w-full z-[2] animate-fade-up">
+    <div class="text-left">
+      <h1 class="text-[3.5rem] font-bold text-dark-pink mb-sm leading-[1.2] animate-pulse">Hi, I'm Teneille ✨</h1>
+      <h2 class="text-2xl text-accent-pink mb-lg font-medium">Graphic Designer & Creative Artist</h2>
+      <p class="text-lg text-text-dark mb-xl leading-[1.7] max-w-[500px]">
         Creating beautiful, meaningful designs that tell stories and connect with hearts. 
         Let's bring your vision to life with colors, creativity, and a touch of magic!
       </p>
-      <div class="cta-buttons">
-        <button class="btn primary" routerLink="/portfolio">View My Work</button>
-        <button class="btn secondary" routerLink="/contact">Let's Chat</button>
+      <div class="flex gap-md flex-wrap">
+        <button class="bg-gradient-primary text-white px-xl py-md text-lg border-none rounded-md font-primary font-medium cursor-pointer transition-all duration-medium shadow-soft no-underline inline-block text-center hover:-translate-y-0.5 hover:shadow-medium active:translate-y-0" routerLink="/portfolio">View My Work</button>
+        <button class="bg-transparent text-dark-pink border-2 border-primary-pink px-xl py-md text-lg rounded-md font-primary font-medium cursor-pointer transition-all duration-medium shadow-soft no-underline inline-block text-center hover:bg-primary-pink hover:text-white hover:-translate-y-0.5 hover:shadow-medium active:translate-y-0" routerLink="/contact">Let's Chat</button>
       </div>
     </div>
-    <div class="hero-image animate-float">
-      <div class="image-placeholder">
-        <div class="decorative-elements">
-          <div class="circle circle-1"></div>
-          <div class="circle circle-2"></div>
-          <div class="circle circle-3"></div>
-          <div class="heart heart-1">💖</div>
-          <div class="heart heart-2">✨</div>
-          <div class="heart heart-3">🌸</div>
+    <div class="flex justify-center items-center relative animate-float">
+      <div class="w-[350px] h-[350px] bg-gradient-primary rounded-full flex justify-center items-center relative shadow-strong">
+        <div class="absolute inset-0">
+          <div class="absolute rounded-full bg-gradient-sunset opacity-30 w-[60px] h-[60px] -top-5 -left-5 animate-pulse"></div>
+          <div class="absolute rounded-full bg-gradient-sunset opacity-30 w-10 h-10 -bottom-2.5 -right-2.5 [animation:pulse_2s_ease-in-out_infinite_0.5s]"></div>
+          <div class="absolute rounded-full bg-gradient-sunset opacity-30 w-[30px] h-[30px] top-1/2 -left-[15px] [animation:pulse_2s_ease-in-out_infinite_1s]"></div>
+          <div class="absolute text-2xl animate-float top-[20%] -right-[30px]">💖</div>
+          <div class="absolute text-2xl [animation:float_3s_ease-in-out_infinite_1s] bottom-[30%] -left-10">✨</div>
+          <div class="absolute text-2xl [animation:float_3s_ease-in-out_infinite_2s] top-[10%] left-[10%]">🌸</div>
         </div>
-        <div class="profile-image">
+        <div class="text-[6rem] z-[2]">
           👩‍🎨
         </div>
       </div>
     </div>
   </div>
   
-  <div class="skills-preview">
-    <div class="skill-item animate-fade-left">
-      <span class="skill-icon">🎨</span>
-      <span class="skill-text">Brand Design</span>
+  <div class="flex gap-xl mt-xxl justify-center flex-wrap">
+    <div class="flex flex-col items-center gap-sm p-lg bg-white/80 rounded-lg shadow-soft border-2 border-secondary-pink transition-all duration-medium min-w-[150px] hover:-translate-y-1 hover:shadow-medium hover:border-accent-pink animate-fade-left">
+      <span class="text-[2.5rem]">🎨</span>
+      <span class="font-primary font-semibold text-dark-pink text-center">Brand Design</span>
     </div>
-    <div class="skill-item animate-fade-up">
-      <span class="skill-icon">📱</span>
-      <span class="skill-text">UI/UX Design</span>
+    <div class="flex flex-col items-center gap-sm p-lg bg-white/80 rounded-lg shadow-soft border-2 border-secondary-pink transition-all duration-medium min-w-[150px] hover:-translate-y-1 hover:shadow-medium hover:border-accent-pink animate-fade-up">
+      <span class="text-[2.5rem]">📱</span>
+      <span class="font-primary font-semibold text-dark-pink text-center">UI/UX Design</span>
     </div>
-    <div class="skill-item animate-fade-right">
-      <span class="skill-icon">✏️</span>
-      <span class="skill-text">Illustration</span>
+    <div class="flex flex-col items-center gap-sm p-lg bg-white/80 rounded-lg shadow-soft border-2 border-secondary-pink transition-all duration-medium min-w-[150px] hover:-translate-y-1 hover:shadow-medium hover:border-accent-pink animate-fade-right">
+      <span class="text-[2.5rem]">✏️</span>
+      <span class="font-primary font-semibold text-dark-pink text-center">Illustration</span>
     </div>
   </div>
 </div>

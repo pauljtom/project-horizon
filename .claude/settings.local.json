@@ -5,7 +5,10 @@
       "Bash(npx @angular/cli@17 new:*)",
       "Bash(npm install)",
       "Bash(ng generate component:*)",
-      "Bash(ng serve:*)"
+      "Bash(ng serve:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(del postcss.config.js)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []
