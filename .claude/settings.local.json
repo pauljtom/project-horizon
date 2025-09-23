@@ -8,7 +8,12 @@
       "Bash(ng serve:*)",
       "Bash(npm uninstall:*)",
       "Bash(del postcss.config.js)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm install:*)",
+      "Bash(findstr:*)",
+      "Bash(npm start)",
+      "Bash(npm start:*)"
     ],
     "deny": [],
     "ask": []

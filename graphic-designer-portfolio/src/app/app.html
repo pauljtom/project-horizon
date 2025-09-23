@@ -1,4 +1,4 @@
-<div class="h-screen overflow-hidden relative">
+<div class="h-screen w-full overflow-hidden relative">
   <nav class="fixed top-md left-1/2 -translate-x-1/2 z-[1000] flex gap-sm bg-white/90 backdrop-blur-[10px] p-sm rounded-lg shadow-soft border-2 border-primary-pink">
     <button class="bg-transparent text-dark-pink border-2 border-transparent px-md py-xs rounded-md font-primary font-medium cursor-pointer transition-all duration-medium no-underline relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-primary before:transition-all before:duration-medium before:-z-10 hover:before:left-0 hover:text-white hover:border-accent-pink hover:-translate-y-0.5 hover:shadow-soft [&.active]:text-white [&.active]:border-accent-pink [&.active]:before:left-0" routerLink="/home" routerLinkActive="active">Home</button>
     <button class="bg-transparent text-dark-pink border-2 border-transparent px-md py-xs rounded-md font-primary font-medium cursor-pointer transition-all duration-medium no-underline relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-primary before:transition-all before:duration-medium before:-z-10 hover:before:left-0 hover:text-white hover:border-accent-pink hover:-translate-y-0.5 hover:shadow-soft [&.active]:text-white [&.active]:border-accent-pink [&.active]:before:left-0" routerLink="/portfolio" routerLinkActive="active">Portfolio</button>
@@ -6,9 +6,9 @@
     <button class="bg-transparent text-dark-pink border-2 border-transparent px-md py-xs rounded-md font-primary font-medium cursor-pointer transition-all duration-medium no-underline relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-primary before:transition-all before:duration-medium before:-z-10 hover:before:left-0 hover:text-white hover:border-accent-pink hover:-translate-y-0.5 hover:shadow-soft [&.active]:text-white [&.active]:border-accent-pink [&.active]:before:left-0" routerLink="/contact" routerLinkActive="active">Contact</button>
   </nav>
   
-  <div class="h-screen w-screen overflow-x-auto overflow-y-hidden scroll-smooth flex snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:h-0 [&::-webkit-scrollbar]:w-0 transition-transform duration-[600ms] [transition-timing-function:cubic-bezier(0.25,0.46,0.45,0.94)]" #scrollContainer>
-    <router-outlet #outlet="outlet" />
-  </div>
+  <!-- <div class="h-screen w-full overflow-x-auto overflow-y-hidden scroll-smooth flex snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:h-0 [&::-webkit-scrollbar]:w-0 transition-transform duration-[600ms] [transition-timing-function:cubic-bezier(0.25,0.46,0.45,0.94)]" #scrollContainer>
+  </div> -->
+  <router-outlet #outlet="outlet" />
   
   <div class="fixed right-lg top-1/2 -translate-y-1/2 z-[1000]">
     <div class="flex flex-col gap-md">
