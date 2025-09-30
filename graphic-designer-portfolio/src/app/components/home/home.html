@@ -1,19 +1,19 @@
-<div class=" pt-24 w-full h-screen flex flex-col justify-center items-center px-12 bg-gradient-soft snap-start relative">
-  <div class="w-full flex flex-row justify-center gap-x-24 z-[2] animate-fade-up">
-    <div class="text-left">
-      <h1 class="text-[3.5rem] font-bold text-dark-pink mb-sm leading-[1.2] animate-pulse">Hi, I'm Teneille ✨</h1>
-      <h2 class="text-2xl text-accent-pink mb-lg font-medium">Graphic Designer & Creative Artist</h2>
-      <p class="text-lg text-text-dark mb-xl leading-[1.7] max-w-[500px]">
+<div class="pt-24 w-full min-h-screen flex flex-col justify-center items-center px-4 md:px-12 py-8 bg-gradient-soft snap-start relative">
+  <div class="w-full flex flex-col md:flex-row justify-center gap-8 md:gap-x-24 z-[2] animate-fade-up">
+    <div class="text-left md:text-left text-center">
+      <h1 class="text-4xl md:text-[3.5rem] font-bold text-dark-pink mb-sm leading-[1.2] animate-pulse">Hi, I'm Teneille ✨</h1>
+      <h2 class="text-xl md:text-2xl text-accent-pink mb-lg font-medium">Graphic Designer & Creative Artist</h2>
+      <p class="text-base md:text-lg text-text-dark mb-xl leading-[1.7] max-w-[500px] mx-auto md:mx-0">
         Creating beautiful, meaningful designs that tell stories and connect with hearts. 
         Let's bring your vision to life with colors, creativity, and a touch of magic!
       </p>
-      <div class="flex gap-md flex-wrap">
-        <button class="bg-gradient-primary text-white px-xl py-md text-lg border-none rounded-md font-primary font-medium cursor-pointer transition-all duration-medium shadow-soft no-underline inline-block text-center hover:-translate-y-0.5 hover:shadow-medium active:translate-y-0" routerLink="/portfolio">View My Work</button>
-        <button class="bg-transparent text-dark-pink border-2 border-primary-pink px-xl py-md text-lg rounded-md font-primary font-medium cursor-pointer transition-all duration-medium shadow-soft no-underline inline-block text-center hover:bg-primary-pink hover:text-white hover:-translate-y-0.5 hover:shadow-medium active:translate-y-0" routerLink="/contact">Let's Chat</button>
+      <div class="flex gap-md flex-wrap justify-center md:justify-start">
+        <button class="bg-gradient-primary text-white px-6 md:px-xl py-3 md:py-md text-base md:text-lg border-none rounded-md font-primary font-medium cursor-pointer transition-all duration-medium shadow-soft no-underline inline-block text-center hover:-translate-y-0.5 hover:shadow-medium active:translate-y-0" routerLink="/portfolio">View My Work</button>
+        <button class="bg-transparent text-dark-pink border-2 border-primary-pink px-6 md:px-xl py-3 md:py-md text-base md:text-lg rounded-md font-primary font-medium cursor-pointer transition-all duration-medium shadow-soft no-underline inline-block text-center hover:bg-primary-pink hover:text-white hover:-translate-y-0.5 hover:shadow-medium active:translate-y-0" routerLink="/contact">Let's Chat</button>
       </div>
     </div>
     <div class="flex justify-center items-center relative animate-float">
-      <div class="w-[350px] h-[350px] bg-gradient-primary rounded-full flex justify-center items-center relative shadow-strong">
+      <div class="w-[250px] h-[250px] md:w-[350px] md:h-[350px] bg-gradient-primary rounded-full flex justify-center items-center relative shadow-strong">
         <div class="absolute inset-0">
           <div class="absolute rounded-full bg-gradient-sunset opacity-30 w-[60px] h-[60px] -top-5 -left-5 animate-pulse"></div>
           <div class="absolute rounded-full bg-gradient-sunset opacity-30 w-10 h-10 -bottom-2.5 -right-2.5 [animation:pulse_2s_ease-in-out_infinite_0.5s]"></div>
@@ -23,13 +23,13 @@
           <div class="absolute text-2xl [animation:float_3s_ease-in-out_infinite_2s] top-[10%] left-[10%]">🌸</div>
         </div>
         <div class="text-[3rem] z-[2]">
-          <img class="rounded-full w-[320px] h-[320px] overflow-hidden object-cover" [src]="teneillePicture2" alt="Teneille">
+          <img class="rounded-full w-[220px] h-[220px] md:w-[320px] md:h-[320px] overflow-hidden object-cover" [src]="teneillePicture2" alt="Teneille">
         </div>
       </div>
     </div>
   </div>
   
-  <div class="flex gap-x-24 mt-24 justify-center flex-wrap">
+  <div class="flex gap-4 md:gap-x-24 mt-12 md:mt-24 justify-center flex-wrap px-4">
     <div class="flex flex-col items-center gap-sm p-lg bg-white/80 rounded-lg shadow-soft border-2 border-secondary-pink transition-all duration-medium min-w-[150px] hover:-translate-y-1 hover:shadow-medium hover:border-accent-pink animate-fade-left">
       <span class="text-[2.5rem]">🎨</span>
       <span class="font-primary font-semibold text-dark-pink text-center">Brand Design</span>
