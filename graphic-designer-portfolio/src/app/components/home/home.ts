@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { MatIconModule, MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink],
+  imports: [RouterLink, MatIconModule],
   templateUrl: './home.html'
 })
 export class Home {

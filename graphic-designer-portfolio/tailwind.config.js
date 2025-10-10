@@ -40,6 +40,7 @@ module.exports = {
       fontFamily: {
         'primary': ['Comfortaa', 'cursive'],
         'secondary': ['Quicksand', 'sans-serif'],
+        
       },
       animation: {
         'fade-up': 'fade-up 0.6s ease',
